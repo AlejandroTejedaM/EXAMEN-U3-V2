@@ -96,6 +96,7 @@ namespace EXAMEN_U3_V2
                         }
                         else
                         {
+                            MessageBox.Show("Vehiculo terminado y verificado");
                             IndicarMSJ = !IndicarMSJ;
                         }
                     }
@@ -171,11 +172,12 @@ namespace EXAMEN_U3_V2
         {
             try
             {
+
                 int x = ImagenCarroNuevo.Location.X;
                 int y = ImagenCarroNuevo.Location.Y;
                 bool derecha = true;
                 metodo_llamar_delegado_carro_inicio(x, y, ImagenCarroNuevo, true);
-                while (true)
+                while (x >= 0)
                 {
                     if (derecha)
                     {
@@ -287,11 +289,10 @@ namespace EXAMEN_U3_V2
                             });
                             pbPintura.Invoke(BajarTuercas);
                         }
-                        metodo_llamar_delegado_carro_inicio(x, y, ImagenCarroNuevo, false);
-                        x += 20;
+                        //metodo_llamar_delegado_carro_inicio(x, y, ImagenCarroNuevo, false);
+                        x += 25;
+                        Thread.Sleep(velocidad);
                     }
-
-                    Thread.Sleep(velocidad);
                 }
             }
             catch (Exception Error)

@@ -161,9 +161,9 @@
             // 
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Image = Properties.Resources.puerta;
-            pictureBox1.Location = new Point(376, 299);
+            pictureBox1.Location = new Point(358, 299);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(110, 92);
+            pictureBox1.Size = new Size(127, 92);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 15;
             pictureBox1.TabStop = false;
